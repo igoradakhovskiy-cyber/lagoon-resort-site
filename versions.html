@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lagoon Resort — Версии лендингов</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#3a4528; --olive-soft:#4c5a36; --cream:#f4f1e6; --card:#fbfaf4;
+    --gold:#b7964a; --gold-2:#c8a85a; --ink:#26301a; --ink-soft:#5d6450;
+    --line:rgba(244,241,230,.16);
+    --serif:"Source Serif 4",Georgia,serif;
+    --sans:"Source Sans 3",system-ui,-apple-system,Segoe UI,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:var(--sans); color:var(--cream);
+    background:radial-gradient(1200px 600px at 70% -10%,#4c5a36 0%,#3a4528 45%,#2c351f 100%);
+    min-height:100vh; line-height:1.5; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1000px;margin:0 auto;padding:56px 22px 72px}
+  /* header */
+  .brand{display:flex;align-items:center;gap:14px;margin-bottom:40px}
+  .seagull{width:46px;height:46px;flex:none}
+  .brand .name{font-family:var(--serif);font-size:25px;font-weight:700;letter-spacing:.14em;color:var(--cream)}
+  .brand .sub{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.42em;color:rgba(244,241,230,.6);margin-top:-2px}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(30px,5vw,46px);line-height:1.08;letter-spacing:-.01em;color:#fff;margin-bottom:14px}
+  .lede{max-width:620px;color:rgba(244,241,230,.78);font-size:17px}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  /* groups */
+  .group{margin-top:52px}
+  .group__title{display:flex;align-items:center;gap:14px;font-family:var(--serif);font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,241,230,.85);margin-bottom:20px}
+  .group__title::after{content:"";flex:1;height:1px;background:var(--line)}
+  .flag{font-size:18px;line-height:1}
+  /* grid */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .card{
+    background:var(--card);color:var(--ink);border-radius:18px;padding:26px 24px 24px;
+    box-shadow:0 18px 50px -22px rgba(0,0,0,.5); border:1px solid rgba(58,69,40,.08);
+    display:flex;flex-direction:column;text-decoration:none;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 26px 60px -20px rgba(0,0,0,.55)}
+  .tag{display:inline-block;align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);background:rgba(183,150,74,.12);padding:5px 10px;border-radius:999px;margin-bottom:16px}
+  .card h3{font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.15;color:var(--ink);margin-bottom:8px}
+  .card p{font-size:14px;color:var(--ink-soft);flex:1;margin-bottom:20px}
+  .go{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:14px;letter-spacing:.02em;color:var(--olive)}
+  .go svg{transition:transform .18s ease}
+  .card:hover .go svg{transform:translateX(4px)}
+  footer{margin-top:60px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:rgba(244,241,230,.55)}
+  footer a{color:rgba(244,241,230,.8)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <svg class="seagull" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="32" cy="32" r="31" stroke="#b7964a" stroke-width="1.5" opacity=".5"/>
+      <path d="M14 34c6 1 9-2 18-9-3 6-3 9 0 9 3 0 5-3 11-9-2 7 1 9 7 8-7 5-13 6-18 6s-13-1-18-5z" fill="#b7964a"/>
+    </svg>
+    <div>
+      <span class="name">LAGOON</span>
+      <span class="sub">RESORT · BATUMI</span>
+    </div>
+  </div>
+
+  <p class="eyebrow">Превью лендингов</p>
+  <h1>Версии страниц Lagoon Resort</h1>
+  <p class="lede">Все варианты лендинга в одном месте. Выбери версию и открой её в новой вкладке — ссылку можно отправлять напрямую.</p>
+
+  <!-- RU -->
+  <section class="group">
+    <div class="group__title"><span class="flag">🇷🇺</span> Русская версия</div>
+    <div class="grid">
+      <a class="card" href="index.html" target="_blank" rel="noopener">
+        <span class="tag">Главная</span>
+        <h3>Основной лендинг</h3>
+        <p>Базовая версия с полной структурой: панорама, инфраструктура, фин-модель, доверие.</p>
+        <span class="go">Открыть <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="card" href="lp-capital.html" target="_blank" rel="noopener">
+        <span class="tag">Сегмент</span>
+        <h3>Защитники капитала</h3>
+        <p>Угол: диверсификация, 0% налог, защита от инфляции. Для ЕС-релокантов 40–60.</p>
+        <span class="go">Открыть <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="card" href="lp-income.html" target="_blank" rel="noopener">
+        <span class="tag">Сегмент</span>
+        <h3>Доходники</h3>
+        <p>Угол: общий поток гостей, котловой метод, прозрачность. Для IT/финансов 35–55.</p>
+        <span class="go">Открыть <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- EN -->
+  <section class="group">
+    <div class="group__title"><span class="flag">🇬🇧</span> English version</div>
+    <div class="grid">
+      <a class="card" href="en/index.html" target="_blank" rel="noopener">
+        <span class="tag">Main</span>
+        <h3>Main landing</h3>
+        <p>Full-structure English version of the primary landing page.</p>
+        <span class="go">Open <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="card" href="en/lp-capital.html" target="_blank" rel="noopener">
+        <span class="tag">Segment</span>
+        <h3>Capital protectors</h3>
+        <p>Angle: diversification, 0% tax, inflation hedge. EU relocators 40–60.</p>
+        <span class="go">Open <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="card" href="en/lp-income.html" target="_blank" rel="noopener">
+        <span class="tag">Segment</span>
+        <h3>Income seekers</h3>
+        <p>Angle: whole-resort guest flow, pooled model, transparency. IT/finance 35–55.</p>
+        <span class="go">Open <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    Внутренняя страница для навигации по версиям · Lagoon Resort, Батуми ·
+    <a href="https://github.com/igoradakhovskiy-cyber/lagoon-resort-site" target="_blank" rel="noopener">репозиторий на GitHub</a>
+  </footer>
+
+</div>
+</body>
+</html>
