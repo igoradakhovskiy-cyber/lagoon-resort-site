@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lagoon Resort — Схема модели дохода (вариант лендинга)</title>
+<meta name="description" content="Lagoon Resort — курортная недвижимость в Батуми, построенная вокруг инфраструктуры: 40+ объектов на приватной территории, Recovery Ecosystem, бизнес-центр и сервис по стандартам Hilton. Финмодель Cushman & Wakefield.">
+<meta name="robots" content="noindex"><!-- вариант «схема модели дохода», не индексируем -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/css/intlTelInput.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="alternate" hreflang="ru" href="index.html">
+<link rel="alternate" hreflang="en" href="en/index.html">
+<link rel="alternate" hreflang="x-default" href="index.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%233a4528'/%3E%3Cpath d='M20 55 C35 40 42 48 50 44 C58 40 62 30 65 35 C66 42 58 50 50 54 C58 53 64 58 70 56 C62 64 52 62 46 60 C40 66 30 64 20 55Z' fill='%23f4f1e6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- seagull symbol reused inline -->
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bird" viewBox="0 0 100 80">
+    <path d="M8 50 C30 32 40 44 50 38 C61 31 64 18 70 24 C71 35 58 46 47 49 C58 47 67 54 76 50 C65 62 52 58 44 54 C36 63 22 62 8 50 Z"/>
+  </symbol>
+</svg>
+
+<!-- ===================== TOP BAR ===================== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <a href="tel:+995514009009">+995 514 00 90 09</a>
+      <a class="tb-hide-sm" href="mailto:info@lagoon-resort.ge">info@lagoon-resort.ge</a>
+      <span class="tb-hide-sm">Батуми, Грузия</span>
+    </div>
+    <div class="tb-right">
+      <a class="tb-msg" href="https://wa.me/995514009009" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="tb-msg" href="https://t.me/lagoonresort" target="_blank" rel="noopener">Telegram</a>
+      <div class="lang">
+        <a class="active">RU</a><a href="en/index.html">EN</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <svg class="bird"><use href="#bird"></use></svg>
+      <span><span class="name">LAGOON</span><span class="sub">RESORT&nbsp;·&nbsp;BATUMI</span></span>
+    </a>
+    <nav class="nav">
+      <a href="#about">О проекте</a>
+      <a href="#returns">Доходность</a>
+      <a href="#units">Квартиры</a>
+      <a href="#amenities">Инфраструктура</a>
+      <a href="#location">Локация</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+995514009009" class="header-phone">+995 514 00 90 09</a>
+      <a href="#lead" class="btn btn--gold">Получить презентацию</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer">
+  <div class="drawer__panel">
+    <button class="drawer__close" id="drawerClose" aria-label="Закрыть">×</button>
+    <a href="#about">О проекте</a>
+    <a href="#returns">Доходность</a>
+    <a href="#units">Квартиры</a>
+    <a href="#amenities">Инфраструктура</a>
+    <a href="#location">Локация</a>
+    <a href="#trust">Гарантии</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#lead" class="btn btn--gold">Получить презентацию</a>
+  </div>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="hero__bg"><img src="assets/img/hero.jpeg" alt="Lagoon Resort Batumi"></div>
+  <div class="wrap">
+    <div class="hero__inner">
+      <div class="eyebrow eyebrow--light">Батуми · Грузия · 40+ объектов инфраструктуры</div>
+      <h1>Курортная недвижимость в&nbsp;Батуми, построенная <em>вокруг инфраструктуры</em></h1>
+      <p class="hero__sub">Lagoon Resort — инвестиционный резорт с&nbsp;40+&nbsp;объектами на приватной территории: от бассейнов и ресторанов до Recovery Ecosystem, бизнес-центра и сервиса по&nbsp;стандартам Hilton.</p>
+      <div class="hero__cta">
+        <a href="#lead" class="btn btn--gold btn--lg">Получить презентацию с ценами и фин. моделью</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hstat"><b>от $85k</b><span>цена входа</span></div>
+        <div class="hstat"><b>0%</b><span>рассрочка до 30 мес</span></div>
+        <div class="hstat"><b>до 16,2%<sup>*</sup></b><span>ROI годовых</span></div>
+      </div>
+      <p class="hero__note">* целевая доходность по независимому аудиту финансовой модели Cushman&nbsp;&amp;&nbsp;Wakefield Veritas</p>
+    </div>
+  </div>
+</section>
+
+<!-- trust strip -->
+<div class="trust-strip">
+  <div class="wrap">
+    <span class="ts-label">Партнёры проекта</span>
+    <b>Hilton</b><span class="dot"></span>
+    <b>Cushman&nbsp;&amp;&nbsp;Wakefield</b><span class="dot"></span>
+    <b>HSC&nbsp;Group&nbsp;Hospitality</b>
+  </div>
+</div>
+
+<!-- ===================== PANORAMA / SECOND SCREEN ===================== -->
+<section class="pano reveal">
+  <img src="assets/img/aerial.jpeg" alt="Панорама курортного комплекса Lagoon Resort в Батуми">
+  <div class="pano__cap">
+    <div class="eyebrow eyebrow--light">Каким будет Lagoon Resort</div>
+    <p>Единый курортный комплекс на приватной территории: апартаменты, бассейны, велнес-купол и инфраструктура на 20 000 м² — всё в одном проекте.</p>
+  </div>
+</section>
+
+<!-- ===================== ABOUT / OVERVIEW ===================== -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">О проекте</div>
+      <h2 class="h-sec">Первый интегрированный инвестиционный резорт Батуми</h2>
+      <p class="lead">Lagoon Resort — это курортный образ жизни 365 дней в году: премиальные апартаменты для жизни и полноценная инфраструктура международного резорта на одной территории. Первая фаза — три архитектурно продуманных здания для длительного проживания. Вторая фаза добавляет резиденции long-stay и отдельный wellness-квартал. Премиальное строительство международного уровня, которого Батуми ещё не видел.</p>
+    </div>
+    <div class="counters reveal">
+      <div class="counter"><b data-count="20000" data-suffix=" м²">20 000 м²</b><span>инфраструктуры</span></div>
+      <div class="counter"><b data-count="4500" data-suffix=" м²">4 500 м²</b><span>рекреационная зона</span></div>
+      <div class="counter"><b data-count="3" data-suffix=" м">3 м</b><span>высота потолков</span></div>
+      <div class="counter"><b data-count="320" data-suffix="">320</b><span>апартаментов</span></div>
+      <div class="counter"><b data-count="2" data-suffix="">2</b><span>фазы развития</span></div>
+      <div class="counter"><b data-count="12" data-suffix="">12</b><span>велнес-направлений</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KEY FEATURES ===================== -->
+<section class="section--tight" style="padding-top:0">
+  <div class="wrap">
+    <div class="grid g-4">
+      <div class="feat reveal">
+        <div class="fic"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V8l8-5 8 5v12M9 20v-6h6v6"/></svg></div>
+        <h3>Панорамные виды</h3>
+        <p>Потолки 3 метра и панорамное остекление в пол во всех апартаментах.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="fic"><svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18M5 6l14 12M19 6L5 18"/></svg></div>
+        <h3>Курорт на 20 000 м²</h3>
+        <p>Бассейны, пляжная лагуна, спа, фитнес, рестораны, детские и бизнес-зоны.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="fic"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></div>
+        <h3>Сервис по стандартам Hilton</h3>
+        <p>Флагманский отель под брендом Hilton в составе резорта — мировой стандарт сервиса и загрузки.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="fic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div>
+        <h3>Доход без забот</h3>
+        <p>УК берёт на себя загрузку, цены, обслуживание и налоги. Ваша роль — владеть.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE MODEL ===================== -->
+<section class="model section model--scheme" id="model">
+  <div class="wrap">
+    <div class="model-head reveal">
+      <div class="big-quote">Один пул.<span>Одна доходность.</span><span>Один стандарт.</span></div>
+      <div class="model-head__intro">
+        <div class="eyebrow eyebrow--light">Модель дохода · схема</div>
+        <h2 class="h-sec">Доход распределяется честно — по дизайну, а не по удаче</h2>
+        <p class="model-lead">Lagoon Resort работает как единая система сервисных резиденций — профессионально управляемая и построенная, чтобы генерировать доход.</p>
+      </div>
+    </div>
+
+    <!-- СХЕМА: разные юниты → общий пул (УК) → равный доход на юнит -->
+    <div class="model-scheme reveal">
+
+      <!-- Уровень 1 — вход: разные юниты -->
+      <div class="ms-stage ms-stage--in">
+        <span class="ms-label">Все инвестиционные юниты — разные этажи, здания, метражи</span>
+        <div class="ms-nodes">
+          <div class="ms-node"><b>Студия</b><span>3 этаж · корпус A</span></div>
+          <div class="ms-node"><b>1-комн</b><span>8 этаж · корпус A</span></div>
+          <div class="ms-node"><b>2-комн</b><span>5 этаж · корпус B</span></div>
+          <div class="ms-node"><b>Пентхаус</b><span>14 этаж · корпус B</span></div>
+        </div>
+      </div>
+
+      <!-- Воронка: всё стекается в один пул -->
+      <div class="ms-funnel ms-funnel--in">
+        <svg viewBox="0 0 200 100" preserveAspectRatio="none" aria-hidden="true">
+          <polygon points="0,0 200,0 116,100 84,100"></polygon>
+        </svg>
+        <span class="ms-flowcap">всё стекается в один пул</span>
+      </div>
+
+      <!-- Уровень 2 — общий пул выручки под управлением УК -->
+      <div class="ms-pool">
+        <div class="ms-pool__title">Общий пул выручки</div>
+        <div class="ms-pool__by">под управлением управляющей компании</div>
+        <div class="ms-pool__chips">
+          <span>Загрузка</span>
+          <span>Ценообразование</span>
+          <span>Ротация гостей</span>
+          <span>Обслуживание</span>
+          <span>Налоги</span>
+        </div>
+      </div>
+
+      <!-- Воронка: делится поровну -->
+      <div class="ms-funnel ms-funnel--out">
+        <svg viewBox="0 0 200 100" preserveAspectRatio="none" aria-hidden="true">
+          <polygon points="84,0 116,0 200,100 0,100"></polygon>
+        </svg>
+        <span class="ms-flowcap">делится поровну · без лотереи</span>
+      </div>
+
+      <!-- Уровень 3 — выход: одинаковый доход на юнит -->
+      <div class="ms-stage ms-stage--out">
+        <div class="ms-nodes ms-nodes--eq">
+          <div class="ms-node ms-node--eq"><b>= доход / юнит</b><span>инвестор 1</span></div>
+          <div class="ms-node ms-node--eq"><b>= доход / юнит</b><span>инвестор 2</span></div>
+          <div class="ms-node ms-node--eq"><b>= доход / юнит</b><span>инвестор 3</span></div>
+          <div class="ms-node ms-node--eq"><b>= доход / юнит</b><span>инвестор 4</span></div>
+        </div>
+        <span class="ms-label ms-label--eq">Одинаковый доход на юнит — независимо от этажа и здания. Равенство заложено в модель.</span>
+      </div>
+    </div>
+
+    <div class="model-foot reveal">
+      <span class="pill">Единственная роль владельца — владеть.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INVESTMENT RETURNS ===================== -->
+<section class="invest section" id="returns">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Доходность инвестиции</div>
+      <h2 class="h-sec">До 16,2% годовых и рост стоимости актива +57%</h2>
+      <p class="lead">Показатели рассчитаны в финансовой модели <b>Cushman&nbsp;&amp;&nbsp;Wakefield</b> на основе исследования рынка Батуми — за 10 лет операционной аренды с учётом перепродажи.</p>
+    </div>
+    <div class="roi-grid reveal">
+      <div class="roi-card">
+        <div class="rv">16,2%</div><div class="rl">ROI · Studio</div>
+        <p>Средняя доходность за 10 операционных лет. IRR с перепродажей — 15,7%.</p>
+      </div>
+      <div class="roi-card">
+        <div class="rv">+57%</div><div class="rl">рост стоимости</div>
+        <p>Цена м² растёт с $2 500 до $3 932 к 2037 году по модели C&amp;W.</p>
+      </div>
+      <div class="roi-card">
+        <div class="rv">60%</div><div class="rl">доля собственника</div>
+        <p>60% выручки от аренды — владельцу, 40% — управляющей компании.</p>
+      </div>
+    </div>
+    <p class="center" style="margin-top:26px;color:var(--ink-soft);font-size:14.5px">ADR растёт с $90 до $121 · загрузка с 55% до 67% за 365 операционных дней · сервисный сбор $2,5/м²</p>
+  </div>
+</section>
+
+<!-- ===================== UNITS ===================== -->
+<section class="units section" id="units">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Выбор апартамента</div>
+      <h2 class="h-sec">Планировки: от студии до двухкомнатных</h2>
+      <p class="lead">Потолки 3 метра, остекление в пол, премиальные материалы. Все юниты сдаются в общий пул дохода под управлением HSC&nbsp;Group по стандартам Hilton.</p>
+    </div>
+    <div class="unit-grid reveal">
+
+      <div class="unit">
+        <div class="unit__img"><img src="assets/img/apt-living.jpeg" alt="Студия Lagoon Resort"><span class="unit__tag">Самый ликвидный</span></div>
+        <div class="unit__body">
+          <h3>Студия</h3>
+          <div class="unit__area">34 м² · $2 500/м²</div>
+          <div class="unit__price"><b>$85 000</b><span>цена входа</span></div>
+          <ul class="unit__specs">
+            <li><span>Доходность (ROI)</span><b class="hl">~16,2%</b></li>
+            <li><span>ADR (старт)</span><b>от $90/ночь</b></li>
+            <li><span>Стоимость к 2037</span><b>$133 688 (+57%)</b></li>
+          </ul>
+          <a href="#lead" class="btn btn--olive btn--block">Получить цены и планировки</a>
+        </div>
+      </div>
+
+      <div class="unit">
+        <div class="unit__img"><img src="assets/img/apt-interior.jpeg" alt="Однокомнатные апартаменты Lagoon Resort"><span class="unit__tag">Баланс цены и площади</span></div>
+        <div class="unit__body">
+          <h3>1 спальня</h3>
+          <div class="unit__area">49 м² · $2 429/м²</div>
+          <div class="unit__price"><b>$119 000</b><span>цена входа</span></div>
+          <ul class="unit__specs">
+            <li><span>Доходность (ROI)</span><b class="hl">~14–16%</b></li>
+            <li><span>ADR (старт)</span><b>от $110/ночь</b></li>
+            <li><span>Стоимость к 2037</span><b>$178 997 (+50%)</b></li>
+          </ul>
+          <a href="#lead" class="btn btn--olive btn--block">Получить цены и планировки</a>
+        </div>
+      </div>
+
+      <div class="unit">
+        <div class="unit__img"><img src="assets/img/apt-bedroom.jpeg" alt="Двухкомнатные апартаменты Lagoon Resort"><span class="unit__tag">Для семьи</span></div>
+        <div class="unit__body">
+          <h3>2 спальни</h3>
+          <div class="unit__area">70 м² · $1 929/м²</div>
+          <div class="unit__price"><b>$135 000</b><span>цена входа</span></div>
+          <ul class="unit__specs">
+            <li><span>Доходность (ROI)</span><b class="hl">~13,8–17%</b></li>
+            <li><span>ADR (старт)</span><b>от $135/ночь</b></li>
+            <li><span>Стоимость к 2037</span><b>$203 070 (+50%)</b></li>
+          </ul>
+          <a href="#lead" class="btn btn--olive btn--block">Получить цены и планировки</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINANCIAL MODEL TABLE ===================== -->
+<section class="fin section" id="finmodel">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Финансовая модель</div>
+      <h2 class="h-sec">Прозрачный расчёт доходности по годам</h2>
+      <p class="lead">Поквартальная модель доходности на основе исследования Cushman&nbsp;&amp;&nbsp;Wakefield. Все цифры — в презентации с ценами, которую вы получите по заявке.</p>
+    </div>
+
+    <div class="tabs reveal">
+      <button class="tab active" data-tab="studio">Студия · 34 м²</button>
+      <button class="tab" data-tab="one">1 спальня · 49 м²</button>
+      <button class="tab" data-tab="two">2 спальни · 70 м²</button>
+    </div>
+
+    <!-- STUDIO -->
+    <div class="fin__panel active" id="tab-studio">
+      <div class="fin__meta">
+        <div><b>$85 000</b><span>цена покупки</span></div>
+        <div><b>16,2%</b><span>средний ROI / 10 лет</span></div>
+        <div><b>15,7%</b><span>IRR с перепродажей</span></div>
+        <div><b>+57%</b><span>рост стоимости к 2037</span></div>
+      </div>
+      <div class="table-wrap">
+        <table class="fin-table">
+          <thead><tr><th>Год</th><th>ADR</th><th>Загрузка</th><th>Выручка</th><th>Доход собственника (60%)</th><th>Чистый доход</th><th>ROI</th></tr></thead>
+          <tbody>
+            <tr><td>2028</td><td>$90</td><td>55%</td><td>$18 068</td><td>$10 841</td><td>$9 821</td><td class="roi-cell">11,6%</td></tr>
+            <tr><td>2029</td><td>$95</td><td>58%</td><td>$20 109</td><td>$12 065</td><td>$11 045</td><td class="roi-cell">13,0%</td></tr>
+            <tr><td>2030</td><td>$98</td><td>61%</td><td>$21 959</td><td>$13 176</td><td>$12 156</td><td class="roi-cell">14,3%</td></tr>
+            <tr><td>2031</td><td>$101</td><td>63%</td><td>$23 296</td><td>$13 978</td><td>$12 958</td><td class="roi-cell">15,2%</td></tr>
+            <tr><td>2032</td><td>$104</td><td>65%</td><td>$24 715</td><td>$14 829</td><td>$13 809</td><td class="roi-cell">16,2%</td></tr>
+            <tr><td>2035</td><td>$114</td><td>67%</td><td>$27 825</td><td>$16 695</td><td>$15 675</td><td class="roi-cell">18,4%</td></tr>
+            <tr><td>2037</td><td>$121</td><td>67%</td><td>$29 520</td><td>$17 712</td><td>$16 692</td><td class="roi-cell">19,6%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 1 BR -->
+    <div class="fin__panel" id="tab-one">
+      <div class="fin__meta">
+        <div><b>$119 000</b><span>цена покупки</span></div>
+        <div><b>~14%</b><span>средний ROI / 10 лет</span></div>
+        <div><b>14%</b><span>IRR с перепродажей</span></div>
+        <div><b>+50%</b><span>рост стоимости к 2037</span></div>
+      </div>
+      <div class="table-wrap">
+        <table class="fin-table">
+          <thead><tr><th>Год</th><th>ADR</th><th>Загрузка</th><th>Выручка</th><th>Доход собственника (60%)</th><th>Чистый доход</th><th>ROI</th></tr></thead>
+          <tbody>
+            <tr><td>2028</td><td>$110</td><td>57%</td><td>$22 886</td><td>$13 731</td><td>$12 261</td><td class="roi-cell">10,3%</td></tr>
+            <tr><td>2029</td><td>$116</td><td>60%</td><td>$25 231</td><td>$15 139</td><td>$13 669</td><td class="roi-cell">11,5%</td></tr>
+            <tr><td>2030</td><td>$120</td><td>62%</td><td>$27 028</td><td>$16 217</td><td>$14 747</td><td class="roi-cell">12,4%</td></tr>
+            <tr><td>2032</td><td>$127</td><td>65%</td><td>$30 125</td><td>$18 075</td><td>$16 605</td><td class="roi-cell">14,0%</td></tr>
+            <tr><td>2035</td><td>$139</td><td>67%</td><td>$33 915</td><td>$20 349</td><td>$18 879</td><td class="roi-cell">15,9%</td></tr>
+            <tr><td>2037</td><td>$148</td><td>67%</td><td>$35 981</td><td>$21 589</td><td>$20 119</td><td class="roi-cell">16,9%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 2 BR -->
+    <div class="fin__panel" id="tab-two">
+      <div class="fin__meta">
+        <div><b>$135 000</b><span>цена покупки</span></div>
+        <div><b>~13,8%</b><span>средний ROI / 10 лет</span></div>
+        <div><b>13,8%</b><span>IRR с перепродажей</span></div>
+        <div><b>+50%</b><span>рост стоимости к 2037</span></div>
+      </div>
+      <div class="table-wrap">
+        <table class="fin-table">
+          <thead><tr><th>Год</th><th>ADR</th><th>Загрузка</th><th>Выручка</th><th>Доход собственника (60%)</th><th>Чистый доход</th><th>ROI</th></tr></thead>
+          <tbody>
+            <tr><td>2028</td><td>$135</td><td>52%</td><td>$25 623</td><td>$15 374</td><td>$13 274</td><td class="roi-cell">9,8%</td></tr>
+            <tr><td>2029</td><td>$142</td><td>55%</td><td>$28 249</td><td>$16 950</td><td>$14 850</td><td class="roi-cell">11,0%</td></tr>
+            <tr><td>2030</td><td>$147</td><td>57%</td><td>$30 555</td><td>$18 333</td><td>$16 233</td><td class="roi-cell">12,0%</td></tr>
+            <tr><td>2032</td><td>$156</td><td>60%</td><td>$34 389</td><td>$20 634</td><td>$18 534</td><td class="roi-cell">13,7%</td></tr>
+            <tr><td>2035</td><td>$171</td><td>63%</td><td>$38 717</td><td>$23 230</td><td>$21 130</td><td class="roi-cell">15,7%</td></tr>
+            <tr><td>2037</td><td>$181</td><td>63%</td><td>$41 900</td><td>$25 140</td><td>$23 040</td><td class="roi-cell">17,1%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p class="fin-note reveal">* Расчёты на основе исследования Cushman&nbsp;&amp;&nbsp;Wakefield Veritas. Использована ставка налога 5%; рекомендуется консультация с налоговым специалистом перед началом эксплуатации. ROI указан как чистый доход к цене покупки; полные поквартальные таблицы — в инвестиционной презентации.</p>
+  </div>
+</section>
+
+<!-- ===================== AMENITIES ===================== -->
+<section class="amen section" id="amenities">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Инфраструктура</div>
+      <h2 class="h-sec">Полноценная среда: вода, велнес и бизнес</h2>
+      <p class="lead">20 000 м² инфраструктуры внутри резорта — всё для жизни, отдыха и работы без выхода за пределы территории.</p>
+    </div>
+
+    <div class="amen-cat reveal">
+      <div class="amen-cat__head"><span class="bar"></span><h3>Вода и пляж</h3></div>
+      <div class="amen-list">
+        <div class="amen-item"><span class="dot"></span>Пляжная лагуна Sand Beach</div>
+        <div class="amen-item"><span class="dot"></span>Главный открытый бассейн</div>
+        <div class="amen-item"><span class="dot"></span>Leisure-бассейн</div>
+        <div class="amen-item"><span class="dot"></span>Крытый бассейн</div>
+        <div class="amen-item"><span class="dot"></span>Детский бассейн</div>
+      </div>
+    </div>
+
+    <div class="amen-cat reveal">
+      <div class="amen-cat__head"><span class="bar"></span><h3>Велнес и долголетие</h3></div>
+      <div class="amen-list">
+        <div class="amen-item"><span class="dot"></span>IV-терапия гидратации</div>
+        <div class="amen-item"><span class="dot"></span>Red-light room</div>
+        <div class="amen-item"><span class="dot"></span>Флоат-капсулы</div>
+        <div class="amen-item"><span class="dot"></span>Нейродиагностика</div>
+        <div class="amen-item"><span class="dot"></span>Хаммам</div>
+        <div class="amen-item"><span class="dot"></span>Сауна</div>
+        <div class="amen-item"><span class="dot"></span>Массажные кабинеты</div>
+        <div class="amen-item"><span class="dot"></span>Соляная комната</div>
+        <div class="amen-item"><span class="dot"></span>Ледяная комната</div>
+        <div class="amen-item"><span class="dot"></span>Фитнес-центр</div>
+        <div class="amen-item"><span class="dot"></span>Йога и медитация</div>
+        <div class="amen-item"><span class="dot"></span>Салон красоты</div>
+      </div>
+    </div>
+
+    <div class="amen-cat reveal">
+      <div class="amen-cat__head"><span class="bar"></span><h3>Бизнес и досуг</h3></div>
+      <div class="amen-list">
+        <div class="amen-item"><span class="dot"></span>Конференц-зал</div>
+        <div class="amen-item"><span class="dot"></span>Переговорные комнаты</div>
+        <div class="amen-item"><span class="dot"></span>Библиотека-лаунж</div>
+        <div class="amen-item"><span class="dot"></span>Ресторан и веранда</div>
+        <div class="amen-item"><span class="dot"></span>Бар (крытый и открытый)</div>
+        <div class="amen-item"><span class="dot"></span>Gentlemen's lounge</div>
+        <div class="amen-item"><span class="dot"></span>Кинотеатр и PlayStation</div>
+        <div class="amen-item"><span class="dot"></span>BBQ-зона</div>
+        <div class="amen-item"><span class="dot"></span>Детские зоны (внутри и снаружи)</div>
+        <div class="amen-item"><span class="dot"></span>Винный погреб</div>
+        <div class="amen-item"><span class="dot"></span>Супермаркет и аптека</div>
+        <div class="amen-item"><span class="dot"></span>Подземный паркинг</div>
+      </div>
+    </div>
+
+    <!-- gallery strip -->
+    <div class="gallery reveal" style="margin-top:46px">
+      <a href="assets/img/indoor-pool.jpeg" target="_blank"><img src="assets/img/indoor-pool.jpeg" alt="Крытый бассейн"></a>
+      <a href="assets/img/spa.jpeg" target="_blank"><img src="assets/img/spa.jpeg" alt="Зона ресторана и бара"></a>
+      <a href="assets/img/wellbeing.jpeg" target="_blank"><img src="assets/img/wellbeing.jpeg" alt="Велнес-лаундж"></a>
+      <a href="assets/img/lounge.jpeg" target="_blank"><img src="assets/img/lounge.jpeg" alt="Лаундж долголетия"></a>
+      <a href="assets/img/pool-logo.jpeg" target="_blank"><img src="assets/img/pool-logo.jpeg" alt="Бассейн под стеклянным куполом"></a>
+      <a href="assets/img/aerial.jpeg" target="_blank"><img src="assets/img/aerial.jpeg" alt="Вид сверху на резорт"></a>
+      <a href="assets/img/relax.jpeg" target="_blank"><img src="assets/img/relax.jpeg" alt="Архитектура резорта"></a>
+      <a href="assets/img/parking.jpeg" target="_blank"><img src="assets/img/parking.jpeg" alt="Подземный паркинг"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LOCATION ===================== -->
+<section class="loc section" id="location">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Локация</div>
+      <h2 class="h-sec">В сердце инвестиционного Батуми</h2>
+      <p class="lead" style="margin-bottom:26px">В шагах от бульвара и развлекательного ядра города — там, где сконцентрированы основные инфраструктурные инвестиции Батуми.</p>
+      <ul class="loc-list">
+        <li><span class="pin">🌳</span><span><b>Рядом</b> Батумский бульвар и центральный парк города</span></li>
+        <li><span class="pin">✈️</span><span><b>~15 мин</b> до аэропорта им. А. Картвели · 1,2 млн+ пассажиров/год</span></li>
+        <li><span class="pin">🛍️</span><span><b>Рядом</b> Grand Mall, Batumi Mall, Aqua Park</span></li>
+        <li><span class="pin">🏥</span><span><b>Рядом</b> госпиталь BAU International</span></li>
+        <li><span class="pin">🎡</span><span><b>Рядом</b> New Boulevard, Beach Park, дельфинарий, Ali&amp;Nino</span></li>
+        <li><span class="pin">🛣️</span><span><b>Прямой</b> выезд на трассу East-West Highway и объездную</span></li>
+      </ul>
+    </div>
+    <div class="loc__map reveal">
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=41.60%2C41.62%2C41.66%2C41.67&layer=mapnik&marker=41.645,41.63"
+        title="Lagoon Resort Batumi на карте"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MARKET / WHY BATUMI ===================== -->
+<section class="market section" id="market">
+  <div class="market__bg"><img src="assets/img/skyline.jpeg" alt="Батуми"></div>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Почему Батуми</div>
+      <h2 class="h-sec">Растущий рынок с двузначной динамикой</h2>
+      <p class="lead">Грузия — одна из самых быстрорастущих экономик региона, а Батуми — главный летний курорт страны и хаб прибрежных инвестиций.</p>
+    </div>
+    <div class="mk-grid reveal">
+      <div class="mk"><b>+47%</b><div class="mt">CAGR рынка недвижимости</div><p>Рост рынка жилья Батуми в 2021–2025. Объём $286,5 млн в 2025.</p></div>
+      <div class="mk"><b>6,86 млн</b><div class="mt">туристов в Грузии</div><p>+6% за год в 2025. Батуми принял более 4 млн гостей.</p></div>
+      <div class="mk"><b>+29%</b><div class="mt">пассажиров аэропорта</div><p>Рекордные 1,23 млн пассажиров аэропорта Батуми в 2025.</p></div>
+      <div class="mk"><b>7,5%</b><div class="mt">рост ВВП Грузии</div><p>ВВП $38,1 млрд, прямые иностранные инвестиции $1,68 млрд (2025).</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TAXES ===================== -->
+<section class="tax section" id="taxes">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Налоги и право</div>
+      <h2 class="h-sec">Инвестиционный климат — это не обещание, это политика</h2>
+      <p class="lead">Фискальная политика Грузии построена на одном принципе — простоте. Доход от вашей инвестиции принадлежит вам.</p>
+    </div>
+    <div class="tax-grid reveal">
+      <div class="tax-card"><div class="z">0%</div><div class="tl">при покупке</div><div class="ts">налог на приобретение</div></div>
+      <div class="tax-card"><div class="z">0%</div><div class="tl">прирост капитала</div><div class="ts">после 2 лет владения</div></div>
+      <div class="tax-card"><div class="z">0%</div><div class="tl">на имущество</div><div class="ts">в большинстве случаев</div></div>
+      <div class="tax-card"><div class="z">0%</div><div class="tl">с дохода от аренды</div><div class="ts">через управляющую компанию</div></div>
+    </div>
+    <p class="center reveal" style="color:var(--ink-soft);font-size:15px">100% владение недвижимостью иностранцами · регистрация права через NAPR за 1 день · покупка по цене от $55 госпошлины</p>
+  </div>
+</section>
+
+<!-- ===================== TRUST ===================== -->
+<section class="trust section" id="trust">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Гарантии и безопасность</div>
+      <h2 class="h-sec">Кому вы доверяете деньги</h2>
+      <p class="lead">Главный вопрос инвестора в строящийся объект — «достроят ли и реальна ли доходность». Вот чем обеспечен Lagoon Resort.</p>
+    </div>
+
+    <div class="trust-cards reveal">
+      <div class="tc">
+        <div class="tic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V8l7-4 7 4v13M9 21v-5h6v5M9 11h.01M15 11h.01"/></svg></div>
+        <h3>Девелопер и оператор</h3>
+        <p>Управление и гостиничные операции — HSC Group Hospitality: международные стандарты, операционная эффективность и качество сервиса. Флагманский отель в составе резорта — под брендом Hilton.</p>
+        <span class="badge">HSC Group · Hilton</span>
+      </div>
+      <div class="tc">
+        <div class="tic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div>
+        <h3>Доходность подтверждена C&amp;W</h3>
+        <p>Финансовая модель и исследование рынка выполнены Cushman&nbsp;&amp;&nbsp;Wakefield — одной из крупнейших мировых консалтинговых компаний в недвижимости. Цифры доходности — не обещание застройщика.</p>
+        <span class="badge">Cushman &amp; Wakefield Veritas</span>
+      </div>
+      <div class="tc">
+        <div class="tic"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z M9 12l2 2 4-4"/></svg></div>
+        <h3>Юридическая безопасность</h3>
+        <p>Договор купли-продажи, прозрачная схема оплаты по этапам и регистрация права собственности через Национальное агентство публичного реестра (NAPR). 100% владение для иностранцев.</p>
+        <span class="badge">Регистрация NAPR</span>
+      </div>
+    </div>
+
+    <div class="partners reveal">
+      <div class="partner">Hilton<small>Гостиничный бренд · 105 лет · 143 страны</small></div>
+      <div class="partner">Cushman &amp; Wakefield<small>Финансовая модель и research</small></div>
+      <div class="partner">HSC Group<small>Hospitality · управление активом</small></div>
+      <div class="partner">NAPR<small>Регистрация права собственности</small></div>
+    </div>
+
+    <div class="progress-note reveal">
+      <span class="ic">📷</span>
+      <p><b>Прогресс строительства.</b> Здесь будут размещены актуальные фото и дрон-видео со стройплощадки с датой съёмки и онлайн веб-камера объекта — чтобы вы видели реальный ход работ, а не только рендеры. <i>(блок для регулярного обновления)</i></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OFFER / PAYMENT (after trust, before process) ===================== -->
+<section class="offer">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow eyebrow--light">Условия покупки</div>
+      <h2>Старт — $10&nbsp;000. Дальше беспроцентная рассрочка по&nbsp;$850 в&nbsp;месяц.</h2>
+      <div class="pay-steps">
+        <div class="pay-step"><b>$10&nbsp;000</b><span>первый взнос при бронировании</span></div>
+        <div class="pay-step"><b>$850</b><span>в месяц · 0% рассрочка до 30 мес</span></div>
+        <div class="pay-step"><b>Остаток</b><span>к вводу в эксплуатацию</span></div>
+      </div>
+    </div>
+    <div class="urgency">
+      <span class="ic">⏳</span>
+      <p><b>Цена растёт с каждым этапом стройки.</b> Старт продаж — $2 500/м². По модели Cushman&nbsp;&amp;&nbsp;Wakefield цена входа вырастет на <b>+24% уже к 2027 году</b> и на <b>+57% к завершению</b>. Текущие цены этапа действуют до ближайшего повышения — зафиксируйте стоимость бронированием.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Процесс покупки</div>
+      <h2 class="h-sec">8 простых шагов до получения дохода</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step"><h3>Заявка</h3><p>Оставляете заявку и получаете презентацию с ценами и фин. моделью.</p></div>
+      <div class="step"><h3>Консультация</h3><p>Менеджер подбирает планировку и считает доходность под ваш бюджет.</p></div>
+      <div class="step"><h3>Первый взнос $10 000</h3><p>Фиксируете апартамент и текущую цену этапа.</p></div>
+      <div class="step"><h3>Договор</h3><p>Подписываете договор купли-продажи с графиком платежей.</p></div>
+      <div class="step"><h3>Регистрация</h3><p>Право собственности регистрируется в NAPR.</p></div>
+      <div class="step"><h3>Рассрочка по $850/мес</h3><p>Беспроцентно, до 30 месяцев на этапе строительства.</p></div>
+      <div class="step"><h3>Ввод 2028</h3><p>Резорт сдаётся, начинается операционная аренда.</p></div>
+      <div class="step"><h3>Доход</h3><p>УК сдаёт апартамент, вы получаете долю выручки.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq section" id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <div class="eyebrow">Частые вопросы</div>
+      <h2 class="h-sec">Юридические и инвестиционные вопросы</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="q"><summary>Достроят ли объект? Кто застройщик?<span class="pm"></span></summary><div class="a">Проект ведёт группа с гостиничным оператором HSC Group Hospitality, флагманский отель в составе резорта — под брендом Hilton. Финансовая модель проверена Cushman&nbsp;&amp;&nbsp;Wakefield. По всем объектам ведётся открытый прогресс строительства: фото и дрон-видео со стройплощадки с датами и онлайн веб-камера.</div></details>
+      <details class="q"><summary>Как защищены мои деньги?<span class="pm"></span></summary><div class="a">Сделка оформляется официальным договором купли-продажи, оплата проходит по графику платежей на этапе строительства, а право собственности регистрируется в Национальном агентстве публичного реестра Грузии (NAPR). Иностранцы владеют недвижимостью на 100%.</div></details>
+      <details class="q"><summary>Реальна ли доходность до 16% годовых?<span class="pm"></span></summary><div class="a">Доходность рассчитана в финансовой модели Cushman&nbsp;&amp;&nbsp;Wakefield на основе реальных данных рынка Батуми: ADR, загрузки и роста цен. Модель учитывает долю собственника 60%, сервисный сбор и налоги. Полные поквартальные таблицы по каждому типу апартамента — в презентации.</div></details>
+      <details class="q"><summary>Могут ли иностранцы владеть недвижимостью в Грузии?<span class="pm"></span></summary><div class="a">Да, иностранные граждане владеют жилой недвижимостью на 100% без ограничений. Регистрация права собственности занимает 1 день через NAPR, госпошлина — от $55.</div></details>
+      <details class="q"><summary>Какие налоги я плачу как инвестор?<span class="pm"></span></summary><div class="a">0% при покупке, 0% налог на прирост капитала (после 2 лет владения), 0% налог на имущество в большинстве случаев и 0% с дохода от аренды (доход проходит через управляющую компанию). Рекомендуется консультация с налоговым специалистом перед началом эксплуатации.</div></details>
+      <details class="q"><summary>Что входит в управление и как я получаю доход?<span class="pm"></span></summary><div class="a">Управляющая компания берёт на себя загрузку, ценообразование, ротацию гостей, обслуживание и налоги. Все юниты входят в общий пул выручки — каждый инвестор получает одинаковый доход на юнит независимо от этажа и здания. Доля собственника — 60% выручки.</div></details>
+      <details class="q"><summary>Как работает рассрочка?<span class="pm"></span></summary><div class="a">Первый взнос — $10 000 при бронировании. Далее беспроцентная рассрочка по $850 в месяц на срок до 30 месяцев, остаток вносится к вводу в эксплуатацию. Также доступно ипотечное финансирование.</div></details>
+      <details class="q"><summary>Когда сдача и старт дохода?<span class="pm"></span></summary><div class="a">Операционная аренда стартует с 2028 года. Модель рассчитана на 10 операционных лет с учётом дальнейшей перепродажи актива, стоимость которого растёт на +50–57% к 2037 году.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA + FORM ===================== -->
+<section class="cta section" id="lead">
+  <div class="cta__bg"><img src="assets/img/cw.jpeg" alt=""></div>
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow eyebrow--light">Получить презентацию</div>
+      <h2>Презентация с ценами, планировками и фин. моделью</h2>
+      <p class="lead" style="color:rgba(244,241,230,.88)">Оставьте контакты — пришлём полную инвестиционную презентацию Lagoon Resort и поможем подобрать апартамент под вашу цель и бюджет.</p>
+      <ul class="cta__list">
+        <li><span class="ck">✓</span> Актуальный прайс по всем планировкам и этажам</li>
+        <li><span class="ck">✓</span> Поквартальная фин. модель Cushman&nbsp;&amp;&nbsp;Wakefield</li>
+        <li><span class="ck">✓</span> Условия рассрочки 0% и бронирования</li>
+        <li><span class="ck">✓</span> Расчёт доходности под ваш бюджет</li>
+      </ul>
+    </div>
+
+    <form class="form" id="leadForm" novalidate>
+      <h3>Получить презентацию</h3>
+      <p class="fsub">Ответим в течение рабочего дня в удобном мессенджере.</p>
+      <div class="field"><label for="name">Имя</label><input type="text" id="name" name="name" placeholder="Ваше имя" required></div>
+      <div class="field"><label for="phone">Телефон</label><input type="tel" id="phone" name="phone" required></div>
+      <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@email.com" required></div>
+      <label style="display:block;font-size:13px;font-weight:700;color:var(--ink-soft);margin-bottom:6px">Удобный мессенджер</label>
+      <div class="msg-choice">
+        <label><input type="radio" name="msg" value="whatsapp" checked><span class="chip">WhatsApp</span></label>
+        <label><input type="radio" name="msg" value="telegram"><span class="chip">Telegram</span></label>
+        <label><input type="radio" name="msg" value="call"><span class="chip">Звонок</span></label>
+      </div>
+      <button type="submit" class="btn btn--gold btn--block btn--lg">Получить презентацию</button>
+      <div class="form__ok" id="formOk">Спасибо! Заявка отправлена — менеджер свяжется с вами в ближайшее время.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div>
+      <div class="brand"><svg class="bird" style="width:30px;height:30px"><use href="#bird"></use></svg><span><span class="name">LAGOON</span><span class="sub">RESORT&nbsp;·&nbsp;BATUMI</span></span></div>
+      <p class="fdesc">Первый интегрированный инвестиционный резорт в Батуми, Грузия.</p>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1 .5 1.5 1s.8.9 1 1.5c.3.6.4 1.3.5 2.3 0 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.6.3-1.3.4-2.3.5-1.1 0-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.3-.6-.4-1.3-.5-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1 1-1.5s.9-.8 1.5-1c.6-.3 1.3-.4 2.3-.5C8.5 2 8.8 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm5.5-.5a1 1 0 100 2 1 1 0 000-2z"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Навигация</h4>
+      <a href="#about">О проекте</a>
+      <a href="#returns">Доходность</a>
+      <a href="#units">Квартиры</a>
+      <a href="#amenities">Инфраструктура</a>
+      <a href="#location">Локация</a>
+      <a href="#faq">Вопросы</a>
+    </div>
+    <div>
+      <h4>Контакты</h4>
+      <a href="tel:+995514009009">+995 514 00 90 09</a>
+      <a href="mailto:info@lagoon-resort.ge">info@lagoon-resort.ge</a>
+      <a href="https://wa.me/995514009009" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://t.me/lagoonresort" target="_blank" rel="noopener">Telegram</a>
+    </div>
+    <div>
+      <h4>Партнёры</h4>
+      <a>Hilton</a>
+      <a>Cushman &amp; Wakefield</a>
+      <a>HSC Group Hospitality</a>
+      <a>NAPR Georgia</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Lagoon Resort Batumi. Все права защищены.</span>
+    <span>Информация на сайте носит ознакомительный характер и не является публичной офертой.</span>
+  </div>
+</footer>
+
+<!-- ===================== STICKY MOBILE CTA ===================== -->
+<div class="sticky-cta">
+  <a href="#lead" class="btn btn--gold">Получить презентацию</a>
+  <a href="tel:+995514009009" class="icon-btn" aria-label="Позвонить"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2z"/></svg></a>
+  <a href="https://wa.me/995514009009" class="icon-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1012 2zm0 2a8 8 0 11-4.2 14.8l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0112 4zm-2.7 4.3c-.2 0-.5 0-.7.3-.2.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.7 2.7 4.2 3.7 2.1.8 2.5.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3l-1.5-.7c-.2-.1-.4-.1-.6.1l-.6.8c-.1.2-.3.2-.5.1-.7-.3-1.4-.6-2.1-1.5-.5-.6-.9-1.3-1-1.5-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3.2-.5 0-.2 0-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4z"/></svg></a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.1/build/js/intlTelInputWithUtils.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

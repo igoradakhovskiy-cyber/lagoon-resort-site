@@ -6,3 +6,9 @@ Thumbs.db
 .claude/
 .vscode/
 *.log
+
+# Tilda paste-ready fragments (local build artifacts, not part of the live site)
+tilda/
+
+# Internal strategy documents (DNA, Hunt ladder, offers) — never publish
+strategy/
