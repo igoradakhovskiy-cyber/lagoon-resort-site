@@ -180,31 +180,37 @@
       </div>
     </div>
 
-    <!-- СХЕМА: разные юниты → общий пул (УК) → равный доход на юнит -->
+    <!-- СХЕМА: воронка одного пула, на примере студий -->
     <div class="model-scheme reveal">
 
-      <!-- Уровень 1 — вход: разные юниты -->
+      <!-- Крупная пометка: пример одного типа -->
+      <div class="ms-example">
+        <span class="ms-example__badge">Как это работает — на примере студий</span>
+        <span class="ms-example__note">У односпальных и двуспальных — свой такой же отдельный пул. Пулы разных типов не смешиваются.</span>
+      </div>
+
+      <!-- Уровень 1 — вход: студии на разных этажах и в разных корпусах -->
       <div class="ms-stage ms-stage--in">
-        <span class="ms-label">Все инвестиционные юниты — разные этажи, здания, метражи</span>
+        <span class="ms-label">Все студии — разные этажи и корпуса</span>
         <div class="ms-nodes">
-          <div class="ms-node"><b>Студия</b><span>3 этаж · корпус A</span></div>
-          <div class="ms-node"><b>1-комн</b><span>8 этаж · корпус A</span></div>
-          <div class="ms-node"><b>2-комн</b><span>5 этаж · корпус B</span></div>
-          <div class="ms-node"><b>Пентхаус</b><span>14 этаж · корпус B</span></div>
+          <div class="ms-node"><b>Студия</b><span>корпус A · 1 этаж</span></div>
+          <div class="ms-node"><b>Студия</b><span>корпус A · 5 этаж</span></div>
+          <div class="ms-node"><b>Студия</b><span>корпус B · 4 этаж</span></div>
+          <div class="ms-node"><b>Студия</b><span>корпус B · 9 этаж</span></div>
         </div>
       </div>
 
-      <!-- Воронка: всё стекается в один пул -->
+      <!-- Воронка: всё стекается в пул студий -->
       <div class="ms-funnel ms-funnel--in">
         <svg viewBox="0 0 200 100" preserveAspectRatio="none" aria-hidden="true">
           <polygon points="0,0 200,0 116,100 84,100"></polygon>
         </svg>
-        <span class="ms-flowcap">всё стекается в один пул</span>
+        <span class="ms-flowcap">всё стекается в пул студий</span>
       </div>
 
-      <!-- Уровень 2 — общий пул выручки под управлением УК -->
+      <!-- Уровень 2 — пул выручки студий под управлением УК -->
       <div class="ms-pool">
-        <div class="ms-pool__title">Общий пул выручки</div>
+        <div class="ms-pool__title">Пул выручки студий</div>
         <div class="ms-pool__by">под управлением управляющей компании</div>
         <div class="ms-pool__chips">
           <span>Загрузка</span>
@@ -223,15 +229,15 @@
         <span class="ms-flowcap">делится поровну · без лотереи</span>
       </div>
 
-      <!-- Уровень 3 — выход: одинаковый доход на юнит -->
+      <!-- Уровень 3 — выход: одинаковый доход на студию -->
       <div class="ms-stage ms-stage--out">
         <div class="ms-nodes ms-nodes--eq">
-          <div class="ms-node ms-node--eq"><b>= доход / юнит</b><span>инвестор 1</span></div>
-          <div class="ms-node ms-node--eq"><b>= доход / юнит</b><span>инвестор 2</span></div>
-          <div class="ms-node ms-node--eq"><b>= доход / юнит</b><span>инвестор 3</span></div>
-          <div class="ms-node ms-node--eq"><b>= доход / юнит</b><span>инвестор 4</span></div>
+          <div class="ms-node ms-node--eq"><b>= доход / студию</b><span>владелец студии 1</span></div>
+          <div class="ms-node ms-node--eq"><b>= доход / студию</b><span>владелец студии 2</span></div>
+          <div class="ms-node ms-node--eq"><b>= доход / студию</b><span>владелец студии 3</span></div>
+          <div class="ms-node ms-node--eq"><b>= доход / студию</b><span>владелец студии 4</span></div>
         </div>
-        <span class="ms-label ms-label--eq">Одинаковый доход на юнит — независимо от этажа и здания. Равенство заложено в модель.</span>
+        <span class="ms-label ms-label--eq">Одинаковый доход на студию — независимо от этажа и корпуса. Так же устроены пулы односпальных и двуспальных, каждый со своей доходностью. Никакой лотереи.</span>
       </div>
     </div>
 
